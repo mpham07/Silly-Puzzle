@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Silly Puzzle - online</title>
+
+<link rel="stylesheet" type="text/css" href="format.css" medial="all" />
+</head>
+
+<br> <br>
+<body bgcolor="#000000">
+
+	<table id = "maintable" align="center" width="570" border="4" height="517">
+    <tr>
+    	<td id = "b1" width="300" valign="top" bgcolor="#000000">
+        </td>
+    	<td id = "b2" align="center" valign="top" bgcolor="#000000">
+        	<br>
+        	<table align="center" border="2">
+            <tr>
+            	<td>
+             	 	<img id = "image" width="200" height="320" >
+ 			<tr>
+            	<td id = "button" height="35" align="center" class = "style10"> <span id = "h">00</span>:<span id = "m">00</span>:<span id ="s">00</span> </td>
+
+            </tr>
+            </table>
+
+							<a href="instruction.html">How to play?</a>
+							<br><br>
+               <input type="image" name="b_tronhinh" src="Hinhanh/btnStart.png" width="55" height="34" onclick="game.newGame()" />
+
+							 <br><br>
+							 <input type="image" src="Hinhanh/fb.png"  value = "FB" width="26" height="26" onclick="OpenFBPage()">
+
+         </td>
+    </tr>
+	</table>
+	<script language="javascript" src = "panel.js"></script>
+	<script language="javascript" src = "piece.js"></script>
+    <script language="javascript" src = "working.js"></script>
+	<script language="javascript" src = "details.js"></script>
+    <script language="javascript" src = "clock.js"></script>
+    <script language="javascript">
+		var game = panel();
+		document.getElementById("b1").appendChild(game);
+		document.getElementById("image").src = st;
+
+	</script>
+</body>
+</html>
